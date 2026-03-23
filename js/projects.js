@@ -30,7 +30,7 @@
       client:      'Private',
       status:      'Completed',
       materials:   'White concrete, glass, limewash plaster',
-      image:       'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=85',
+      image:       './assets/images/projects/linden-house-courtyard-model.jpeg',
       description: 'An urban family residence in the heart of Tel Aviv structured around a central courtyard that draws daylight deep into the plan and moderates the Mediterranean climate through cross-ventilation. The rooms face inward toward the courtyard rather than outward toward the street, creating a quiet domestic world within a dense urban fabric. The courtyard is planted with a single linden tree from which the house takes its name — a tree known for its longevity and the quality of shade it casts in the afternoon.'
     },
     {
@@ -42,7 +42,7 @@
       client:      'Keren Foundation',
       status:      'Completed',
       materials:   'Exposed concrete, Jerusalem stone, steel',
-      image:       'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=85',
+      image:       './assets/images/projects/keren-cultural-center-drawings.jpeg',
       description: 'A community arts hub carved into a hillside site on the boundary between the Jewish Quarter and the Armenian Quarter of Jerusalem\'s Old City. The program — two exhibition galleries, four workshop studios, a café, and a 120-seat auditorium — is distributed across three terraced levels, each opening onto a different view of the city below. Exposed concrete throughout is deliberately rough, echoing the geological character of the limestone bedrock beneath the site. The building received the Israeli Architecture Prize in 2022.'
     },
     {
@@ -78,7 +78,7 @@
       client:      'Private',
       status:      'Completed',
       materials:   'Cast concrete, Corten steel, oak deck',
-      image:       'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=85',
+      image:       './assets/images/projects/garden-pavilion-botanical-sketch.jpeg',
       description: 'A contemplative garden structure on a private estate north of Copenhagen. The pavilion — in cast-in-situ concrete and weathering Corten steel — is designed to change in appearance over time: the concrete base will accumulate moss and lichen; the steel will deepen from orange to a dark, earthy brown. The single interior room is open on three sides, framing views of the garden as a series of living paintings across the seasons. A long water trough runs along the south wall, its surface catching the low Danish light.'
     },
     {
@@ -90,7 +90,7 @@
       client:      'HaTachana Foundation',
       status:      'Completed',
       materials:   'Board-formed concrete, plate steel, glass',
-      image:       'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=85',
+      image:       './assets/images/projects/hatachana-gallery-street-sketch.jpeg',
       description: 'A new gallery wing inserted into the HaTachana complex — Tel Aviv\'s restored 19th-century Ottoman railway terminus. The intervention reads as a deliberate contrast: a raw concrete box nested among the original red-stone train sheds, connected by a glazed passageway that preserves views of the original masonry. Two exhibition halls and a public bookshop occupy the new volume. The existing station fabric is untouched apart from careful conservation work carried out in collaboration with Israel\'s Antiquities Authority.'
     },
     {
@@ -102,7 +102,7 @@
       client:      'Private',
       status:      'Completed',
       materials:   'Cast concrete, Corten steel screens, local stone',
-      image:       'https://images.unsplash.com/photo-1600607687939-ba03584f21ae?auto=format&fit=crop&w=1600&q=85',
+      image:       './assets/images/projects/carmel-ridge-terrain-model.jpeg',
       description: 'A private residence on the lower slopes of Mount Carmel, where the building\'s plan follows the natural contour of the hill rather than cutting into it. Three concrete platforms step down the slope: the upper holds sleeping spaces and a library; the middle is the principal living level; the lower extends into a cantilevered terrace that appears to float above the garden. All three levels converge on a double-height stairwell open to the sky through a narrow north-facing clerestory. Corten steel screens shade the west-facing terraces and will rust to a deep reddish-brown over time.'
     },
     {
