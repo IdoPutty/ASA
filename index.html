@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adi Shmueli Architect — ASA</title>
+  <meta name="description" content="Adi Shmueli is a Tel Aviv–based architect creating spaces that endure. Residential, cultural, and commercial architecture.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Adi Shmueli Architect — ASA">
+  <meta property="og:description" content="Creating spaces that endure. Residential, cultural, and commercial architecture.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://idoputty.github.io/asa/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/sections.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="ASA — Adi Shmueli Architect">
+        <svg class="logo-svg" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <text x="0" y="30" font-family="Cormorant, Georgia, serif" font-weight="300" font-size="28" letter-spacing="14" fill="currentColor">ASA</text>
+          <line x1="0" y1="36" x2="200" y2="36" stroke="currentColor" stroke-width="0.75" opacity="0.4"/>
+          <text x="1" y="46" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="7.5" letter-spacing="5" fill="currentColor" opacity="0.65">ARCHITECT</text>
+        </svg>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+      </button>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <div class="mobile-menu-inner">
+      <div class="mobile-line-top"></div>
+      <nav>
+        <ul class="mobile-menu-links" role="list">
+          <li><a href="#about" class="mobile-menu-link">About</a></li>
+          <li><a href="#projects" class="mobile-menu-link">Projects</a></li>
+          <li><a href="#contact" class="mobile-menu-link">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="mobile-menu-sub">Adi Shmueli Architect &middot; Tel Aviv</p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section id="hero" class="hero" aria-label="Introduction">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-top-rule" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-label" aria-hidden="true">Architecture &nbsp;&middot;&nbsp; Tel Aviv</p>
+        <h1 class="hero-name">
+          <span class="hero-name-line">Adi</span>
+          <span class="hero-name-line">Shmueli</span>
+        </h1>
+        <div class="hero-rule" aria-hidden="true"></div>
+        <p class="hero-tagline"><em>Form shaped by memory.</em></p>
+        <a href="#projects" class="btn btn-outline-white">View Work</a>
+      </div>
+
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════ -->
+    <section id="about" class="about" aria-label="About Adi Shmueli">
+      <div class="section-rule" aria-hidden="true"></div>
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-image-col">
+            <div class="about-image-frame">
+              <img
+                src="./assets/images/about-portrait.jpg"
+                alt="Adi Shmueli, Architect"
+                class="about-portrait"
+                loading="lazy"
+                width="480"
+                height="600"
+              >
+            </div>
+          </div>
+
+          <div class="about-content-col">
+            <p class="section-label">About</p>
+            <h2 class="about-heading">
+              Shaping Space,<br>
+              <em>Shaping Experience.</em>
+            </h2>
+            <div class="about-body">
+              <p>Adi Shmueli is a Tel Aviv–based architect with a practice rooted in the belief that architecture is not merely the arrangement of space, but the choreography of human experience within it.</p>
+              <p>Her work spans residential, cultural, and civic commissions across Israel and Europe, each project grounded in rigorous material research and a deep engagement with site, memory, and light.</p>
+              <p>A graduate of the Technion — Israel Institute of Technology, Adi holds a Master of Architecture with distinction. She is a licensed member of the Association of Engineers and Architects in Israel.</p>
+            </div>
+            <p class="about-credentials">Licensed Architect &nbsp;&middot;&nbsp; AEAI Member &nbsp;&middot;&nbsp; Est. 2015</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PROJECTS
+    ═══════════════════════════════════════ -->
+    <section id="projects" class="projects" aria-label="Selected works">
+      <div class="section-rule" aria-hidden="true"></div>
+      <div class="container">
+
+        <header class="projects-header">
+          <p class="section-label">Work</p>
+          <h2 class="projects-heading">Selected Works</h2>
+          <p class="projects-subtext">A selection of residential, cultural, and commercial projects.</p>
+        </header>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project 01 -->
+          <article class="project-card" data-index="0" tabindex="0" role="button" aria-label="View Villa Seravezza project">
+            <div class="project-card-image" aria-hidden="true">
+              <img src="./assets/images/projects/project-01.jpg" alt="Villa Seravezza — hillside residence in Tuscany" loading="lazy" width="600" height="450">
+              <div class="project-card-overlay">
+                <span class="overlay-title">Villa Seravezza</span>
+                <span class="overlay-category">Residential</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <p class="project-category">Residential</p>
+              <h3 class="project-title">Villa Seravezza</h3>
+              <p class="project-meta">Tuscany, Italy &nbsp;&middot;&nbsp; 2023</p>
+              <p class="project-desc">A hillside villa integrating local travertine with precise concrete volumes, opening the living sequence toward the Apuan Alps.</p>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card" data-index="1" tabindex="0" role="button" aria-label="View The Linden House project">
+            <div class="project-card-image" aria-hidden="true">
+              <img src="./assets/images/projects/project-02.jpg" alt="The Linden House — urban residence in Tel Aviv" loading="lazy" width="600" height="450">
+              <div class="project-card-overlay">
+                <span class="overlay-title">The Linden House</span>
+                <span class="overlay-category">Residential</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <p class="project-category">Residential</p>
+              <h3 class="project-title">The Linden House</h3>
+              <p class="project-meta">Tel Aviv, Israel &nbsp;&middot;&nbsp; 2022</p>
+              <p class="project-desc">An urban family residence in the heart of Tel Aviv, structured around a central courtyard that draws light deep into the plan.</p>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card" data-index="2" tabindex="0" role="button" aria-label="View Keren Cultural Center project">
+            <div class="project-card-image" aria-hidden="true">
+              <img src="./assets/images/projects/project-03.jpg" alt="Keren Cultural Center — Jerusalem" loading="lazy" width="600" height="450">
+              <div class="project-card-overlay">
+                <span class="overlay-title">Keren Cultural Center</span>
+                <span class="overlay-category">Cultural</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <p class="project-category">Cultural</p>
+              <h3 class="project-title">Keren Cultural Center</h3>
+              <p class="project-meta">Jerusalem, Israel &nbsp;&middot;&nbsp; 2021</p>
+              <p class="project-desc">A community arts hub carved into a hillside site, its exposed concrete shell contrasting with the ancient stone of the surrounding neighborhood.</p>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-card" data-index="3" tabindex="0" role="button" aria-label="View Studio Mast project">
+            <div class="project-card-image" aria-hidden="true">
+              <img src="./assets/images/projects/project-04.jpg" alt="Studio Mast — commercial workspace in Berlin" loading="lazy" width="600" height="450">
+              <div class="project-card-overlay">
+                <span class="overlay-title">Studio Mast</span>
+                <span class="overlay-category">Commercial</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <p class="project-category">Commercial</p>
+              <h3 class="project-title">Studio Mast</h3>
+              <p class="project-meta">Berlin, Germany &nbsp;&middot;&nbsp; 2021</p>
+              <p class="project-desc">A creative studio conversion in Prenzlauer Berg — raw structure preserved and amplified, new interventions in steel and glass.</p>
+            </div>
+          </article>
+
+          <!-- Project 05 -->
+          <article class="project-card" data-index="4" tabindex="0" role="button" aria-label="View Apartment 14B project">
+            <div class="project-card-image" aria-hidden="true">
+              <img src="./assets/images/projects/project-05.jpg" alt="Apartment 14B — interior renovation in New York" loading="lazy" width="600" height="450">
+              <div class="project-card-overlay">
+                <span class="overlay-title">Apartment 14B</span>
+                <span class="overlay-category">Interior</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <p class="project-category">Interior</p>
+              <h3 class="project-title">Apartment 14B</h3>
+              <p class="project-meta">New York, USA &nbsp;&middot;&nbsp; 2020</p>
+              <p class="project-desc">A Manhattan apartment stripped to its bones — a minimal intervention that restores dignity to a pre-war plan through material restraint.</p>
+            </div>
+          </article>
+
+          <!-- Project 06 -->
+          <article class="project-card" data-index="5" tabindex="0" role="button" aria-label="View The Garden Pavilion project">
+            <div class="project-card-image" aria-hidden="true">
+              <img src="./assets/images/projects/project-06.jpg" alt="The Garden Pavilion — landscape structure in Copenhagen" loading="lazy" width="600" height="450">
+              <div class="project-card-overlay">
+                <span class="overlay-title">The Garden Pavilion</span>
+                <span class="overlay-category">Landscape</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <p class="project-category">Landscape</p>
+              <h3 class="project-title">The Garden Pavilion</h3>
+              <p class="project-meta">Copenhagen, Denmark &nbsp;&middot;&nbsp; 2019</p>
+              <p class="project-desc">A contemplative garden structure in concrete and weathered steel, designed to disappear into the landscape through the seasons.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════════ -->
+    <section id="contact" class="contact" aria-label="Contact">
+      <div class="contact-rule" aria-hidden="true"></div>
+      <div class="container">
+
+        <p class="section-label section-label--light">Contact</p>
+        <h2 class="contact-heading">
+          Let's build<br>
+          <em>something together.</em>
+        </h2>
+        <p class="contact-sub">
+          Available for residential, cultural, and commercial commissions.<br>
+          Based in Tel Aviv, working internationally.
+        </p>
+
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <a href="mailto:studio@adishmueli.com" class="contact-link">
+              studio@adishmueli.com
+            </a>
+            <a href="tel:+972500000000" class="contact-link">
+              +972 &nbsp;&middot;&nbsp; 50 &nbsp;&middot;&nbsp; 000 &nbsp;&middot;&nbsp; 0000
+            </a>
+            <div class="contact-socials">
+              <a href="#" class="contact-social-link" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="#" class="contact-social-link" aria-label="Instagram profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            novalidate
+          >
+            <div class="form-group">
+              <label for="form-name" class="form-label">Name</label>
+              <input type="text" id="form-name" name="name" class="form-input" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="form-email" class="form-label">Email</label>
+              <input type="email" id="form-email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="form-message" class="form-label">Message</label>
+              <textarea id="form-message" name="message" class="form-textarea" placeholder="Tell me about your project" rows="4" required></textarea>
+            </div>
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+            <button type="submit" class="btn btn-outline-light" id="form-submit">
+              Send Message
+            </button>
+          </form>
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="site-footer" aria-label="Site footer">
+        <div class="footer-rule" aria-hidden="true"></div>
+        <div class="container footer-inner">
+          <a href="#hero" class="footer-logo-link" aria-label="Back to top — ASA">
+            <svg class="logo-svg logo-svg--white" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <text x="0" y="30" font-family="Cormorant, Georgia, serif" font-weight="300" font-size="28" letter-spacing="14" fill="white">ASA</text>
+              <line x1="0" y1="36" x2="200" y2="36" stroke="white" stroke-width="0.75" opacity="0.35"/>
+              <text x="1" y="46" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="7.5" letter-spacing="5" fill="white" opacity="0.5">ARCHITECT</text>
+            </svg>
+          </a>
+          <p class="footer-copy">&copy; 2024 Adi Shmueli Architect &nbsp;&middot;&nbsp; All rights reserved</p>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       PROJECT LIGHTBOX MODAL
+  ═══════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close project detail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <div class="lightbox-inner">
+      <div class="lightbox-image-col">
+        <img class="lightbox-img" id="lightbox-img" src="" alt="" loading="lazy">
+      </div>
+      <div class="lightbox-details-col">
+        <p class="lightbox-category" id="lightbox-category"></p>
+        <h2 class="lightbox-title" id="lightbox-title"></h2>
+        <p class="lightbox-meta" id="lightbox-meta"></p>
+        <div class="lightbox-rule" aria-hidden="true"></div>
+        <p class="lightbox-desc" id="lightbox-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/nav.js"></script>
+  <script src="./js/projects.js"></script>
+  <script src="./js/contact.js"></script>
+</body>
+</html>
