@@ -1,23 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 54" fill="none" role="img" aria-label="ASA — Adi Shmueli Architect">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 54" fill="none" role="img" aria-label="ASA — Adi Shmueli Architect">
   <title>ASA — Adi Shmueli Architect</title>
 
-  <!-- "ASA" wordmark in Cormorant style -->
-  <!-- Letter A (left) -->
-  <path d="M4 38 L16 8 L28 38" stroke="#2A2826" stroke-width="0.9" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
-  <line x1="9" y1="27" x2="23" y2="27" stroke="#2A2826" stroke-width="0.9"/>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&amp;display=swap');
+    </style>
+  </defs>
 
-  <!-- Letter S -->
-  <path d="M42 14 Q42 8 49 8 Q56 8 56 14 Q56 21 42 21 Q36 21 36 28 Q36 38 44 38 Q52 38 56 32"
-        stroke="#2A2826" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- "ASA" wordmark in Orbitron -->
+  <text
+    x="0" y="34"
+    font-family="'Orbitron', monospace"
+    font-weight="400"
+    font-size="28"
+    letter-spacing="8"
+    fill="#2A2826"
+  >ASA</text>
 
-  <!-- Letter A (right) — apex in a slightly lighter tone -->
-  <path d="M66 38 L78 8 L90 38" stroke="#2A2826" stroke-width="0.9" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
-  <!-- Apex accent — tiny filled triangle at peak -->
-  <polygon points="78,8 76,13 80,13" fill="#6B6864" opacity="0.7"/>
-  <line x1="71" y1="27" x2="85" y2="27" stroke="#2A2826" stroke-width="0.9"/>
-
-  <!-- Baseline rule — full width of text block -->
-  <line x1="0" y1="42" x2="96" y2="42" stroke="#C8C4BF" stroke-width="0.75"/>
+  <!-- Baseline rule -->
+  <line x1="0" y1="42" x2="160" y2="42" stroke="#C8C4BF" stroke-width="0.75"/>
 
   <!-- "ARCHITECT" subtitle -->
   <text
