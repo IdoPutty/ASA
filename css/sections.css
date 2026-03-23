@@ -7,32 +7,31 @@
    ════════════════════════════════════════ */
 .hero {
   position: relative;
-  height: 100svh;
-  min-height: 600px;
-  display: flex;
-  align-items: flex-end;
+  height: 100vh;       /* reliable fallback */
+  height: 100svh;      /* preferred — handles mobile chrome resize */
+  min-height: 620px;
   overflow: hidden;
   color: var(--color-white);
+  /* ⚠️  NO display:flex here — content is pinned via position:absolute */
 }
 
 .hero-bg {
   position: absolute;
   inset: 0;
   z-index: 0;
-  /* Gradient overlay on top of the Unsplash hero photo */
   background-image:
     linear-gradient(
       170deg,
-      rgba(20, 19, 18, 0.35) 0%,
-      rgba(20, 19, 18, 0.72) 100%
+      rgba(20, 19, 18, 0.30) 0%,
+      rgba(20, 19, 18, 0.75) 100%
     ),
     url('https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1920&q=85');
   background-size: cover;
   background-position: center 40%;
-  background-color: var(--gray-900); /* fallback while image loads */
+  background-color: var(--gray-900); /* solid fallback while image loads */
 }
 
-/* Thin entablature line at very top */
+/* Thin rule at very top of hero */
 .hero-top-rule {
   position: absolute;
   top: 0;
@@ -43,13 +42,20 @@
   z-index: 2;
 }
 
+/* ─────────────────────────────────────────
+   Hero content — pinned to BOTTOM of hero.
+   Using position:absolute is bulletproof;
+   flex align-items:flex-end can fail when
+   the container height collapses (no svh support).
+───────────────────────────────────────── */
 .hero-content {
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 2;
-  padding: 0 var(--container-pad) var(--space-20);
-  max-width: var(--container-max);
-  width: 100%;
-  margin-inline: auto;
+  padding-inline: var(--container-pad);
+  padding-bottom: clamp(3rem, 8vh, 6.5rem);
 }
 
 .hero-label {

@@ -102,6 +102,51 @@
         'Status':    'Completed 2019',
         'Materials': 'Cast concrete, Corten steel, oak deck'
       }
+    },
+    {
+      id: 'hatachana-gallery-wing',
+      title: 'HaTachana Gallery Wing',
+      category: 'Cultural / Adaptive Reuse',
+      meta: 'Tel Aviv, Israel · 2023',
+      image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=85',
+      imageAlt: 'HaTachana Gallery Wing — adaptive reuse, Tel Aviv',
+      description: 'A new gallery wing inserted into the HaTachana complex — Tel Aviv\'s restored 19th-century Ottoman railway terminus. The intervention reads as a deliberate contrast: a raw concrete box nested among the original red-stone train sheds, connected by a glass passageway that preserves views of the original masonry. Two exhibition halls and a bookshop occupy the new volume; the existing station fabric is untouched apart from careful conservation work.',
+      specs: {
+        'Area':       '480 m²',
+        'Client':     'HaTachana Foundation',
+        'Status':     'Completed 2023',
+        'Materials':  'Board-formed concrete, plate steel, glass'
+      }
+    },
+    {
+      id: 'house-on-carmel-ridge',
+      title: 'House on Carmel Ridge',
+      category: 'Residential',
+      meta: 'Haifa, Israel · 2022',
+      image: 'https://images.unsplash.com/photo-1600607687939-ba03584f21ae?auto=format&fit=crop&w=1600&q=85',
+      imageAlt: 'House on Carmel Ridge — hillside residence, Haifa',
+      description: 'A private residence on the lower slopes of Mount Carmel, where the building\'s plan follows the natural contour of the hill rather than cutting into it. Three concrete platforms step down the slope: the upper holds sleeping spaces and a study; the middle is the principal living level; the lower extends into a cantilevered terrace that appears to float over the garden below. All three levels converge on a double-height stairwell open to the sky through a narrow north-facing clerestory.',
+      specs: {
+        'Area':      '310 m²',
+        'Client':    'Private',
+        'Status':    'Completed 2022',
+        'Materials': 'Cast concrete, Cor-Ten steel screens, stone cladding'
+      }
+    },
+    {
+      id: 'nomad-spa',
+      title: 'The Nomad Spa',
+      category: 'Hospitality / Interior',
+      meta: 'Jaffa, Israel · 2020',
+      image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=85',
+      imageAlt: 'The Nomad Spa — wellness retreat interior, Jaffa',
+      description: 'A spa and wellness retreat occupying the ground floor and vaulted cellar of a repurposed Ottoman building in Old Jaffa. The program — thermal baths, treatment rooms, a meditation hall, and a rooftop terrace — is distributed across six sandstone vaults of varying scale. New concrete elements are introduced sparingly: a reception desk, partitions between wet and dry zones, and a long lap pool that follows the axis of the oldest vault. The material palette is stone, water, and light.',
+      specs: {
+        'Area':       '850 m²',
+        'Client':     'Nomad Hospitality Group',
+        'Status':     'Completed 2020',
+        'Materials':  'Ottoman sandstone (existing), concrete, limestone'
+      }
     }
   ];
 
