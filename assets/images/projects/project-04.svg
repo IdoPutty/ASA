@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <!-- Background: darkest concrete in the set -->
+  <rect width="600" height="450" fill="#C8C7C3"/>
+
+  <!-- Floor plates -->
+  <rect x="60" y="330" width="480" height="10" fill="#A8A6A0" stroke="#706E68" stroke-width="0.8"/>
+  <rect x="60" y="200" width="480" height="10" fill="#A8A6A0" stroke="#706E68" stroke-width="0.8"/>
+  <rect x="60" y="90" width="480" height="10" fill="#A8A6A0" stroke="#706E68" stroke-width="0.8"/>
+
+  <!-- Structural columns (cast-iron, round) — grid 5 × 2 -->
+  <!-- Row positions: x = 100, 200, 300, 400, 500 -->
+  <!-- Floor levels: ground=340, mezzanine=210 -->
+
+  <!-- Ground to mezzanine columns -->
+  <rect x="92" y="100" width="16" height="230" fill="#B1AFA9" stroke="#706E68" stroke-width="0.8"/>
+  <rect x="192" y="100" width="16" height="230" fill="#B1AFA9" stroke="#706E68" stroke-width="0.8"/>
+  <rect x="292" y="100" width="16" height="230" fill="#B1AFA9" stroke="#706E68" stroke-width="0.8"/>
+  <rect x="392" y="100" width="16" height="230" fill="#B1AFA9" stroke="#706E68" stroke-width="0.8"/>
+  <rect x="492" y="100" width="16" height="230" fill="#B1AFA9" stroke="#706E68" stroke-width="0.8"/>
+
+  <!-- Column caps at ground level -->
+  <rect x="88" y="326" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="188" y="326" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="288" y="326" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="388" y="326" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="488" y="326" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+
+  <!-- Column caps at mezzanine level -->
+  <rect x="88" y="196" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="188" y="196" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="288" y="196" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="388" y="196" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="488" y="196" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+
+  <!-- Column bases at top level -->
+  <rect x="88" y="86" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="188" y="86" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="288" y="86" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="388" y="86" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="488" y="86" width="24" height="8" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+
+  <!-- Mezzanine insert — new steel element (lighter tone) -->
+  <rect x="200" y="210" width="300" height="120" fill="#D4D2CE" stroke="#706E68" stroke-width="1" stroke-dasharray="0"/>
+  <!-- Mezzanine structural beams (steel, thin) -->
+  <line x1="200" y1="210" x2="500" y2="210" stroke="#4E4C48" stroke-width="1.5"/>
+  <line x1="200" y1="330" x2="500" y2="330" stroke="#4E4C48" stroke-width="1.5"/>
+  <line x1="200" y1="250" x2="500" y2="250" stroke="#4E4C48" stroke-width="0.6" stroke-dasharray="8,4"/>
+  <line x1="200" y1="290" x2="500" y2="290" stroke="#4E4C48" stroke-width="0.6" stroke-dasharray="8,4"/>
+  <!-- Mezzanine glass (structural) -->
+  <rect x="200" y="210" width="300" height="120" fill="rgba(200,200,200,0.15)" stroke="#706E68" stroke-width="0.4"/>
+  <text x="305" y="274" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="8" letter-spacing="3" fill="#706E68">NEW MEZZANINE</text>
+
+  <!-- Ground floor space label -->
+  <text x="80" y="290" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="9" letter-spacing="2" fill="#929088">EXISTING HALL</text>
+  <!-- Upper floor label -->
+  <text x="80" y="155" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="9" letter-spacing="2" fill="#929088">STUDIO LEVEL</text>
+
+  <!-- Ground floor indication -->
+  <rect x="0" y="340" width="600" height="110" fill="#B1AFA9" opacity="0.5"/>
+  <line x1="0" y1="340" x2="600" y2="340" stroke="#706E68" stroke-width="1"/>
+
+  <!-- Roof edge -->
+  <rect x="56" y="82" width="490" height="10" fill="#929088" stroke="#706E68" stroke-width="0.8"/>
+
+  <!-- Detail callout -->
+  <circle cx="500" cy="210" r="16" fill="none" stroke="#706E68" stroke-width="0.8"/>
+  <text x="495" y="214" font-family="Jost, system-ui, sans-serif" font-weight="300" font-size="10" fill="#706E68">1</text>
+  <line x1="516" y1="210" x2="540" y2="185" stroke="#706E68" stroke-width="0.5"/>
+  <text x="542" y="182" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="7" letter-spacing="1" fill="#929088">STEEL CONN.</text>
+
+  <!-- Label -->
+  <line x1="40" y1="418" x2="560" y2="418" stroke="#929088" stroke-width="0.5"/>
+  <text x="40" y="435" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="9" letter-spacing="3" fill="#706E68">04 — STUDIO MAST</text>
+  <text x="350" y="435" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="9" letter-spacing="3" fill="#929088">STRUCTURAL SECTION 1:50</text>
+</svg>

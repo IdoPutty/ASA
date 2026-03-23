@@ -15,43 +15,40 @@
   color: var(--color-white);
 }
 
-/* Dark concrete gradient background (placeholder until real photo is added) */
 .hero-bg {
   position: absolute;
   inset: 0;
   z-index: 0;
   background:
     linear-gradient(
-      to bottom,
-      rgba(15, 15, 14, 0.2) 0%,
-      rgba(15, 15, 14, 0.55) 100%
+      170deg,
+      rgba(20, 19, 18, 0.15) 0%,
+      rgba(20, 19, 18, 0.6) 100%
     ),
     linear-gradient(
       135deg,
-      #1e1d1c 0%,
-      #2a2826 35%,
-      #3a3734 65%,
-      #222120 100%
+      var(--gray-900) 0%,
+      var(--gray-800) 30%,
+      var(--gray-700) 60%,
+      var(--gray-900) 100%
     );
-  /* When a real hero photo is available, replace the gradient with:
-     background-image: url('../assets/images/hero-bg.jpg');
+  /* To use a real photo, replace with:
+     background-image: linear-gradient(…overlay…), url('../assets/images/hero-bg.jpg');
      background-size: cover;
-     background-position: center;
-     + keep the rgba overlay as a separate pseudo-element */
+     background-position: center; */
 }
 
-/* Structural line at the very top — Greek entablature reference */
+/* Thin entablature line at very top */
 .hero-top-rule {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 1px;
-  background: rgba(200, 196, 191, 0.25);
+  background: rgba(204, 202, 197, 0.2);
   z-index: 2;
 }
 
-/* Content */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -67,7 +64,7 @@
   font-size: var(--font-label);
   letter-spacing: var(--tracking-label);
   text-transform: uppercase;
-  color: rgba(250, 250, 250, 0.55);
+  color: rgba(249, 249, 248, 0.45);
   margin-bottom: var(--space-4);
   opacity: 0;
   animation: fadeUp 0.8s ease 0.3s forwards;
@@ -90,15 +87,13 @@
   opacity: 0;
   animation: fadeUp 0.9s ease forwards;
 }
-
 .hero-name-line:nth-child(1) { animation-delay: 0.5s; }
 .hero-name-line:nth-child(2) { animation-delay: 0.65s; }
 
-/* Structural rule under the name */
 .hero-rule {
   width: 60px;
   height: 1px;
-  background: rgba(250, 250, 250, 0.4);
+  background: rgba(249, 249, 248, 0.35);
   margin-bottom: var(--space-4);
   opacity: 0;
   animation: fadeIn 0.8s ease 0.9s forwards;
@@ -109,7 +104,7 @@
   font-weight: var(--fw-light);
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-style: italic;
-  color: rgba(250, 250, 250, 0.65);
+  color: rgba(249, 249, 248, 0.6);
   margin-bottom: var(--space-6);
   opacity: 0;
   animation: fadeUp 0.8s ease 1s forwards;
@@ -120,22 +115,18 @@
   animation: fadeUp 0.8s ease 1.15s forwards;
 }
 
-/* Scroll indicator */
 .hero-scroll-indicator {
   position: absolute;
   bottom: var(--space-8);
   right: var(--container-pad);
   z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .scroll-line {
   display: block;
   width: 1px;
   height: 48px;
-  background: linear-gradient(to bottom, transparent, rgba(250,250,250,0.35));
+  background: linear-gradient(to bottom, transparent, rgba(249, 249, 248, 0.3));
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
@@ -143,11 +134,10 @@
    ABOUT
    ════════════════════════════════════════ */
 .about {
-  background: var(--color-concrete-light);
+  background: var(--gray-100);
   padding-block: var(--space-24);
 }
 
-/* Portrait frame with offset border */
 .about-image-col {
   position: relative;
 }
@@ -156,11 +146,12 @@
   position: relative;
 }
 
+/* Offset frame — Greek column base reference */
 .about-image-frame::before {
   content: '';
   position: absolute;
   inset: -10px -10px 10px 10px;
-  border: 1px solid var(--color-line);
+  border: 1px solid var(--gray-300);
   z-index: 0;
   pointer-events: none;
 }
@@ -172,12 +163,11 @@
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  filter: grayscale(20%);
+  filter: grayscale(15%);
   display: block;
-  background: var(--color-concrete-mid); /* Fallback when image missing */
+  background: var(--gray-300);
 }
 
-/* About content */
 .about-content-col {
   padding-top: var(--space-4);
 }
@@ -187,7 +177,7 @@
   font-weight: var(--fw-light);
   font-size: var(--font-h2);
   line-height: var(--leading-snug);
-  color: var(--color-charcoal);
+  color: var(--gray-800);
   letter-spacing: var(--tracking-tight);
   margin-bottom: var(--space-8);
 }
@@ -201,24 +191,54 @@
 
 .about-body p {
   font-size: var(--font-body-md);
-  color: var(--color-stone);
+  color: var(--gray-600);
   line-height: var(--leading-loose);
+}
+
+/* Statistics row */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--gray-300);
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.about-stat-number {
+  font-family: var(--font-display);
+  font-weight: var(--fw-light);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--gray-800);
+  line-height: 1;
+  letter-spacing: var(--tracking-tight);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.about-stat-label {
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--font-label);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--gray-500);
+  display: block;
 }
 
 .about-credentials {
   font-size: var(--font-label);
   letter-spacing: var(--tracking-label);
   text-transform: uppercase;
-  color: var(--color-concrete-dark);
-  padding-top: var(--space-4);
-  border-top: 1px solid var(--color-line);
+  color: var(--gray-500);
 }
 
 /* ════════════════════════════════════════
    PROJECTS
    ════════════════════════════════════════ */
 .projects {
-  background: var(--color-white);
+  background: var(--gray-50);
   padding-block: var(--space-24);
 }
 
@@ -234,14 +254,14 @@
   font-weight: var(--fw-light);
   font-size: var(--font-h1);
   line-height: var(--leading-snug);
-  color: var(--color-charcoal);
+  color: var(--gray-800);
   letter-spacing: var(--tracking-tight);
   margin-bottom: var(--space-3);
 }
 
 .projects-subtext {
   font-size: var(--font-body-sm);
-  color: var(--color-stone);
+  color: var(--gray-500);
   line-height: var(--leading-normal);
 }
 
@@ -249,16 +269,14 @@
    CONTACT
    ════════════════════════════════════════ */
 .contact {
-  background: var(--color-ink);
+  background: var(--gray-900);
   padding-top: var(--space-24);
-  position: relative;
 }
 
-/* Structural rule at top of contact section */
 .contact-rule {
   width: 100%;
   height: 1px;
-  background: rgba(200, 196, 191, 0.12);
+  background: rgba(204, 202, 197, 0.1);
   margin-bottom: var(--space-16);
 }
 
@@ -267,14 +285,14 @@
   font-weight: var(--fw-light);
   font-size: var(--font-h1);
   line-height: var(--leading-snug);
-  color: var(--color-white);
+  color: var(--gray-50);
   letter-spacing: var(--tracking-tight);
   margin-bottom: var(--space-4);
 }
 
 .contact-sub {
   font-size: var(--font-body-sm);
-  color: var(--color-concrete-dark);
+  color: var(--gray-500);
   line-height: var(--leading-loose);
   max-width: 480px;
 }
@@ -283,28 +301,22 @@
    ANIMATIONS
    ════════════════════════════════════════ */
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
 
 @keyframes scrollPulse {
-  0%, 100% { opacity: 0.3; transform: scaleY(1); }
-  50% { opacity: 0.7; transform: scaleY(1.1); }
+  0%, 100% { opacity: 0.25; }
+  50%       { opacity: 0.65; }
 }
 
 /* ════════════════════════════════════════
-   SCROLL REVEAL — applied via JS
+   SCROLL REVEAL
    ════════════════════════════════════════ */
 .reveal {
   opacity: 0;
@@ -317,9 +329,8 @@
   transform: translateY(0);
 }
 
-/* Staggered delay for grid children */
-.reveal-stagger > *:nth-child(1) { transition-delay: 0ms; }
-.reveal-stagger > *:nth-child(2) { transition-delay: 80ms; }
+.reveal-stagger > *:nth-child(1) { transition-delay:   0ms; }
+.reveal-stagger > *:nth-child(2) { transition-delay:  80ms; }
 .reveal-stagger > *:nth-child(3) { transition-delay: 160ms; }
 .reveal-stagger > *:nth-child(4) { transition-delay: 240ms; }
 .reveal-stagger > *:nth-child(5) { transition-delay: 320ms; }

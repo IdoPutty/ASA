@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <!-- Background: landscape -->
+  <rect width="600" height="450" fill="#DDDCDA"/>
+
+  <!-- Sky — light gradient suggestion -->
+  <rect x="0" y="0" width="600" height="280" fill="#E8E7E3"/>
+  <!-- Horizon line -->
+  <line x1="0" y1="280" x2="600" y2="280" stroke="#B1AFA9" stroke-width="0.6"/>
+  <!-- Ground plane -->
+  <rect x="0" y="280" width="600" height="170" fill="#D4D2CE"/>
+
+  <!-- Far tree line — distant landscape (very faint) -->
+  <line x1="0" y1="262" x2="600" y2="262" stroke="#C8C7C3" stroke-width="0.4"/>
+  <!-- Tree silhouettes far distance -->
+  <rect x="40" y="246" width="3" height="18" fill="#C8C7C3"/>
+  <ellipse cx="41" cy="244" rx="10" ry="8" fill="#C8C7C3"/>
+  <rect x="100" y="252" width="3" height="12" fill="#C8C7C3"/>
+  <ellipse cx="101" cy="250" rx="8" ry="6" fill="#C8C7C3"/>
+  <rect x="480" y="248" width="3" height="14" fill="#C8C7C3"/>
+  <ellipse cx="481" cy="246" rx="9" ry="7" fill="#C8C7C3"/>
+  <rect x="540" y="251" width="3" height="11" fill="#C8C7C3"/>
+  <ellipse cx="541" cy="249" rx="7" ry="6" fill="#C8C7C3"/>
+
+  <!-- Pavilion — concrete base -->
+  <rect x="175" y="290" width="250" height="16" fill="#A8A6A0" stroke="#706E68" stroke-width="1"/>
+
+  <!-- Pavilion deck -->
+  <rect x="165" y="282" width="270" height="12" fill="#B1AFA9" stroke="#706E68" stroke-width="0.8"/>
+
+  <!-- Pavilion columns (4 × round, Corten steel) — slightly rusty tone -->
+  <rect x="184" y="170" width="14" height="114" fill="#A8A6A0" stroke="#706E68" stroke-width="0.8"/>
+  <rect x="286" y="170" width="14" height="114" fill="#A8A6A0" stroke="#706E68" stroke-width="0.8"/>
+  <rect x="388" y="170" width="14" height="114" fill="#A8A6A0" stroke="#706E68" stroke-width="0.8"/>
+  <rect x="402" y="170" width="14" height="114" fill="#A8A6A0" stroke="#706E68" stroke-width="0.8"/>
+  <rect x="184" y="170" width="14" height="114" fill="#A8A6A0" stroke="#706E68" stroke-width="0.8"/>
+  <!-- Column bases -->
+  <rect x="180" y="282" width="22" height="6" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="282" y="282" width="22" height="6" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="384" y="282" width="22" height="6" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+  <rect x="398" y="282" width="22" height="6" fill="#929088" stroke="#706E68" stroke-width="0.5"/>
+
+  <!-- Pavilion roof slab (concrete) -->
+  <rect x="163" y="158" width="274" height="16" fill="#B1AFA9" stroke="#706E68" stroke-width="1"/>
+  <!-- Roof edge shadow line -->
+  <line x1="163" y1="174" x2="437" y2="174" stroke="#929088" stroke-width="0.8"/>
+
+  <!-- Interior space (open on three sides) — light fill -->
+  <rect x="198" y="174" width="204" height="108" fill="rgba(240,239,237,0.35)"/>
+
+  <!-- Interior — single room suggestion: a chair and small table -->
+  <rect x="272" y="238" width="56" height="36" fill="none" stroke="#B1AFA9" stroke-width="0.6" stroke-dasharray="4,3"/>
+  <rect x="288" y="250" width="24" height="16" fill="#C8C7C3" stroke="#929088" stroke-width="0.5"/>
+  <circle cx="300" cy="264" r="5" fill="#B1AFA9" stroke="#929088" stroke-width="0.4"/>
+
+  <!-- Foreground trees (larger) -->
+  <rect x="68" y="226" width="5" height="56" fill="#929088"/>
+  <ellipse cx="70" cy="220" rx="22" ry="18" fill="#B1AFA9" stroke="#929088" stroke-width="0.5"/>
+  <rect x="498" y="230" width="5" height="52" fill="#929088"/>
+  <ellipse cx="500" cy="224" rx="20" ry="16" fill="#B1AFA9" stroke="#929088" stroke-width="0.5"/>
+
+  <!-- Ground plane grass indication -->
+  <line x1="0" y1="306" x2="600" y2="306" stroke="#C8C7C3" stroke-width="0.4"/>
+  <line x1="80" y1="320" x2="165" y2="320" stroke="#C8C7C3" stroke-width="0.4"/>
+  <line x1="435" y1="320" x2="520" y2="320" stroke="#C8C7C3" stroke-width="0.4"/>
+
+  <!-- Dimension line -->
+  <line x1="184" y1="148" x2="416" y2="148" stroke="#B1AFA9" stroke-width="0.6"/>
+  <line x1="184" y1="143" x2="184" y2="153" stroke="#B1AFA9" stroke-width="0.6"/>
+  <line x1="416" y1="143" x2="416" y2="153" stroke="#B1AFA9" stroke-width="0.6"/>
+  <text x="276" y="145" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="7.5" letter-spacing="1" fill="#929088">8.00 m</text>
+
+  <!-- Height dimension -->
+  <line x1="450" y1="158" x2="450" y2="282" stroke="#B1AFA9" stroke-width="0.6"/>
+  <line x1="445" y1="158" x2="455" y2="158" stroke="#B1AFA9" stroke-width="0.6"/>
+  <line x1="445" y1="282" x2="455" y2="282" stroke="#B1AFA9" stroke-width="0.6"/>
+  <text x="454" y="224" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="7.5" letter-spacing="1" fill="#929088">3.60 m</text>
+
+  <!-- Label -->
+  <line x1="40" y1="418" x2="560" y2="418" stroke="#C8C7C3" stroke-width="0.5"/>
+  <text x="40" y="435" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="9" letter-spacing="3" fill="#929088">06 — THE GARDEN PAVILION</text>
+  <text x="400" y="435" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="9" letter-spacing="3" fill="#B1AFA9">EAST ELEVATION</text>
+</svg>

@@ -644,6 +644,43 @@ body {
   font-size: var(--font-body-sm);
   color: var(--color-concrete-mid);
   line-height: var(--leading-loose);
+  margin-bottom: var(--space-6);
+}
+
+/* Project specs table inside lightbox */
+.lightbox-specs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-1) var(--space-4);
+  border-top: 1px solid rgba(204, 202, 197, 0.12);
+  padding-top: var(--space-4);
+}
+
+.lightbox-specs dt {
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--font-label);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--gray-500);
+  padding-block: var(--space-1);
+}
+
+.lightbox-specs dd {
+  font-size: var(--font-body-sm);
+  color: var(--gray-400);
+  padding-block: var(--space-1);
+}
+
+/* Contact address */
+.contact-address {
+  font-family: var(--font-display);
+  font-weight: var(--fw-light);
+  font-size: 1rem;
+  color: var(--gray-600);
+  line-height: var(--leading-loose);
+  margin-bottom: var(--space-4);
+  font-style: normal;
 }
 
 @media (max-width: 768px) {

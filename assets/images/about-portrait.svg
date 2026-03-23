@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" fill="none">
+  <!-- Background: portrait-format concrete -->
+  <rect width="480" height="600" fill="#CCCAC5"/>
+
+  <!-- Subtle grid overlay (architectural drawing paper) -->
+  <line x1="0" y1="100" x2="480" y2="100" stroke="#C0BFBA" stroke-width="0.4"/>
+  <line x1="0" y1="200" x2="480" y2="200" stroke="#C0BFBA" stroke-width="0.4"/>
+  <line x1="0" y1="300" x2="480" y2="300" stroke="#C0BFBA" stroke-width="0.4"/>
+  <line x1="0" y1="400" x2="480" y2="400" stroke="#C0BFBA" stroke-width="0.4"/>
+  <line x1="0" y1="500" x2="480" y2="500" stroke="#C0BFBA" stroke-width="0.4"/>
+  <line x1="120" y1="0" x2="120" y2="600" stroke="#C0BFBA" stroke-width="0.4"/>
+  <line x1="240" y1="0" x2="240" y2="600" stroke="#C0BFBA" stroke-width="0.4"/>
+  <line x1="360" y1="0" x2="360" y2="600" stroke="#C0BFBA" stroke-width="0.4"/>
+
+  <!-- Geometric portrait composition -->
+  <!-- Figure ground -->
+  <rect x="120" y="80" width="240" height="380" fill="#D4D2CE"/>
+
+  <!-- Head — circle -->
+  <circle cx="240" cy="180" r="72" fill="#B1AFA9" stroke="#929088" stroke-width="1"/>
+
+  <!-- Shoulders / torso -->
+  <path d="M120 370 Q145 310 170 290 Q205 270 240 268 Q275 270 310 290 Q335 310 360 370 L360 460 L120 460 Z"
+        fill="#B1AFA9" stroke="#929088" stroke-width="1"/>
+
+  <!-- Neck -->
+  <rect x="218" y="248" width="44" height="44" fill="#B1AFA9"/>
+
+  <!-- Subtle facial features — architectural line style -->
+  <!-- Eyes -->
+  <line x1="208" y1="172" x2="228" y2="172" stroke="#929088" stroke-width="1.2"/>
+  <line x1="252" y1="172" x2="272" y2="172" stroke="#929088" stroke-width="1.2"/>
+  <!-- Nose -->
+  <path d="M240,182 L234,200 Q240,204 246,200 L240,182" stroke="#929088" stroke-width="0.8" fill="none"/>
+  <!-- Mouth -->
+  <path d="M224,214 Q240,222 256,214" stroke="#929088" stroke-width="1" fill="none"/>
+
+  <!-- Collar / top of clothing -->
+  <path d="M200 292 Q220 280 240 278 Q260 280 280 292 L290 320 Q266 310 240 308 Q214 310 190 320 Z"
+        fill="#A8A6A0" stroke="#929088" stroke-width="0.8"/>
+
+  <!-- Thin border frame -->
+  <rect x="1" y="1" width="478" height="598" stroke="#B1AFA9" stroke-width="1"/>
+
+  <!-- Corner marks — architectural registration marks -->
+  <line x1="0" y1="24" x2="24" y2="24" stroke="#929088" stroke-width="0.6"/>
+  <line x1="24" y1="0" x2="24" y2="24" stroke="#929088" stroke-width="0.6"/>
+  <line x1="456" y1="24" x2="480" y2="24" stroke="#929088" stroke-width="0.6"/>
+  <line x1="456" y1="0" x2="456" y2="24" stroke="#929088" stroke-width="0.6"/>
+  <line x1="0" y1="576" x2="24" y2="576" stroke="#929088" stroke-width="0.6"/>
+  <line x1="24" y1="576" x2="24" y2="600" stroke="#929088" stroke-width="0.6"/>
+  <line x1="456" y1="576" x2="480" y2="576" stroke="#929088" stroke-width="0.6"/>
+  <line x1="456" y1="576" x2="456" y2="600" stroke="#929088" stroke-width="0.6"/>
+
+  <!-- Label block at bottom -->
+  <rect x="0" y="540" width="480" height="60" fill="#B1AFA9" opacity="0.6"/>
+  <line x1="0" y1="540" x2="480" y2="540" stroke="#929088" stroke-width="0.8"/>
+  <text x="30" y="563" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="10" letter-spacing="4" fill="#4E4C48">ADI SHMUELI</text>
+  <text x="30" y="580" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="8" letter-spacing="4" fill="#706E68">PORTRAIT PLACEHOLDER — REPLACE WITH PHOTO</text>
+</svg>

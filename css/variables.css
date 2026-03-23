@@ -5,28 +5,59 @@
 
 :root {
 
-  /* ── Palette ────────────────────────────
-     Monochromatic concrete & stone tones.
-     Inspired by Greek classical architecture:
-     marble, raw concrete, weathered stone.
-  ────────────────────────────────────────── */
-  --color-concrete-light:  #EBEBEA;   /* Page background */
-  --color-concrete-mid:    #D4D2CE;   /* Card backgrounds, panels */
-  --color-concrete-dark:   #A8A49F;   /* Secondary text, borders */
-  --color-stone:           #6B6864;   /* Body copy */
-  --color-charcoal:        #2A2826;   /* Primary headings, nav */
-  --color-ink:             #0F0F0E;   /* Footer background, darkest */
-  --color-white:           #FAFAFA;   /* Section alternation */
-  --color-line:            #C8C4BF;   /* All rules, hairlines, borders */
+  /* ── Gray Scale — 10 distinct concrete tones ──
+     From near-white to near-black.
+     Inspired by raw concrete, polished marble,
+     and the stone palette of Greek classical architecture.
+  ─────────────────────────────────────────────── */
+  --gray-50:   #F9F9F8;   /* Near white — lightest surface    */
+  --gray-100:  #F0EFED;   /* Light concrete — page background */
+  --gray-150:  #E8E7E3;   /* Very light — card backgrounds    */
+  --gray-200:  #E0DFDB;   /* Light-mid — subtle panels        */
+  --gray-300:  #CCCAC5;   /* Mid-light — borders, hairlines   */
+  --gray-400:  #B1AFA9;   /* Mid — secondary borders          */
+  --gray-500:  #929088;   /* Mid-dark — metadata, captions    */
+  --gray-600:  #706E68;   /* Dark-mid — body copy             */
+  --gray-700:  #4E4C48;   /* Dark — strong text               */
+  --gray-800:  #2E2C2A;   /* Very dark — headings, charcoal   */
+  --gray-900:  #141312;   /* Near black — footer, ink         */
 
-  /* ── Typography ─────────────────────────
-     Cormorant: classical display serif
-     Jost: geometric modern sans
-  ────────────────────────────────────────── */
+  /* ── Semantic Color Tokens ──────────────────
+     Map gray scale to purpose.
+     Update the gray value above to shift the
+     whole site's feel without hunting for hex codes.
+  ─────────────────────────────────────────────── */
+  --color-page-bg:          var(--gray-100);
+  --color-surface-light:    var(--gray-50);
+  --color-surface:          var(--gray-150);
+  --color-surface-mid:      var(--gray-200);
+  --color-border-subtle:    var(--gray-200);
+  --color-border:           var(--gray-300);
+  --color-border-strong:    var(--gray-400);
+  --color-text-muted:       var(--gray-400);
+  --color-text-secondary:   var(--gray-500);
+  --color-text-body:        var(--gray-600);
+  --color-text-strong:      var(--gray-700);
+  --color-text-heading:     var(--gray-800);
+  --color-ink:              var(--gray-900);
+  --color-white:            var(--gray-50);
+
+  /* Legacy aliases — used throughout components.css & sections.css */
+  --color-concrete-light:   var(--gray-100);
+  --color-concrete-mid:     var(--gray-200);
+  --color-concrete-dark:    var(--gray-400);
+  --color-stone:            var(--gray-600);
+  --color-charcoal:         var(--gray-800);
+  --color-line:             var(--gray-300);
+
+  /* ── Typography ─────────────────────────────
+     Cormorant: classical display serif (Greek gravitas)
+     Jost: geometric modern sans (precision)
+  ────────────────────────────────────────────── */
   --font-display:  'Cormorant', Georgia, 'Times New Roman', serif;
   --font-body:     'Jost', system-ui, -apple-system, sans-serif;
 
-  /* Type scale */
+  /* Type scale — fluid with clamp() */
   --font-hero:     clamp(4.5rem, 11vw, 10rem);
   --font-h1:       clamp(2.5rem, 5vw, 4rem);
   --font-h2:       clamp(1.75rem, 3vw, 2.5rem);
@@ -34,10 +65,10 @@
   --font-body-lg:  1.125rem;
   --font-body-md:  1rem;
   --font-body-sm:  0.875rem;
-  --font-label:    0.6875rem;         /* For uppercase section labels */
+  --font-label:    0.6875rem;
   --font-caption:  0.75rem;
 
-  /* Font weights */
+  /* Weights */
   --fw-thin:       200;
   --fw-light:      300;
   --fw-regular:    400;
@@ -49,39 +80,37 @@
   --leading-loose:  1.85;
 
   /* Letter spacing */
-  --tracking-label:  0.2em;           /* For uppercase labels */
-  --tracking-wide:   0.12em;          /* Nav links */
-  --tracking-tight:  -0.01em;         /* Large headings */
+  --tracking-label:  0.2em;
+  --tracking-wide:   0.12em;
+  --tracking-tight:  -0.01em;
 
-  /* ── Spacing ─────────────────────────────
-     8px base unit
-  ────────────────────────────────────────── */
-  --space-1:   0.5rem;    /*  8px */
-  --space-2:   1rem;      /* 16px */
-  --space-3:   1.5rem;    /* 24px */
-  --space-4:   2rem;      /* 32px */
-  --space-6:   3rem;      /* 48px */
-  --space-8:   4rem;      /* 64px */
-  --space-12:  6rem;      /* 96px */
-  --space-16:  8rem;      /* 128px */
-  --space-20:  10rem;     /* 160px */
-  --space-24:  12rem;     /* 192px */
+  /* ── Spacing — 8px base ──────────────────── */
+  --space-1:   0.5rem;
+  --space-2:   1rem;
+  --space-3:   1.5rem;
+  --space-4:   2rem;
+  --space-6:   3rem;
+  --space-8:   4rem;
+  --space-12:  6rem;
+  --space-16:  8rem;
+  --space-20:  10rem;
+  --space-24:  12rem;
 
-  /* ── Layout ──────────────────────────────*/
-  --container-max:    1280px;
-  --container-pad:    clamp(1.5rem, 5vw, 4rem);
-  --nav-height:       72px;
-  --grid-gap:         1.5rem;
+  /* ── Layout ──────────────────────────────── */
+  --container-max:  1280px;
+  --container-pad:  clamp(1.5rem, 5vw, 4rem);
+  --nav-height:     72px;
+  --grid-gap:       1.5rem;
 
-  /* ── Borders & Lines ─────────────────────*/
-  --border-thin:   1px solid var(--color-line);
-  --border-mid:    1px solid var(--color-concrete-dark);
+  /* ── Borders ─────────────────────────────── */
+  --border-thin:   1px solid var(--color-border);
+  --border-mid:    1px solid var(--color-border-strong);
 
-  /* ── Transitions ─────────────────────────*/
+  /* ── Transitions ─────────────────────────── */
   --transition-base:  200ms ease;
   --transition-slow:  400ms ease;
 
-  /* ── Shadows ─────────────────────────────*/
-  --shadow-card:  0 2px 20px rgba(15, 15, 14, 0.06);
-  --shadow-lifted: 0 8px 40px rgba(15, 15, 14, 0.12);
+  /* ── Shadows ─────────────────────────────── */
+  --shadow-card:    0 2px 20px rgba(20, 19, 18, 0.05);
+  --shadow-lifted:  0 8px 40px rgba(20, 19, 18, 0.10);
 }

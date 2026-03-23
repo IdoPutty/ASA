@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <!-- Background: slightly darker concrete -->
+  <rect width="600" height="450" fill="#D8D7D3"/>
+
+  <!-- Sky area -->
+  <rect x="0" y="0" width="600" height="260" fill="#E0DFDB"/>
+
+  <!-- Ground profile — sloping hillside, left high right low -->
+  <polygon points="0,260 0,420 600,420 600,320 520,310 400,295 280,280 140,268 60,262 0,260"
+           fill="#C8C7C3" stroke="#929088" stroke-width="1"/>
+
+  <!-- Level 3 (top / highest) — Auditorium -->
+  <rect x="60" y="160" width="180" height="100" fill="#CCCAC5" stroke="#706E68" stroke-width="1.2"/>
+  <!-- Level 3 roof parapet -->
+  <rect x="56" y="148" width="188" height="16" fill="#B1AFA9" stroke="#706E68" stroke-width="1"/>
+  <!-- Level 3 glazed front -->
+  <rect x="60" y="172" width="28" height="88" fill="#E8E7E3" stroke="#929088" stroke-width="0.8"/>
+  <line x1="60" y1="200" x2="88" y2="200" stroke="#929088" stroke-width="0.4"/>
+  <line x1="60" y1="228" x2="88" y2="228" stroke="#929088" stroke-width="0.4"/>
+  <!-- Section cut fill -->
+  <rect x="86" y="160" width="154" height="100" fill="#C0BFBB"/>
+  <text x="98" y="215" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="8" letter-spacing="2" fill="#929088">AUDITORIUM</text>
+
+  <!-- Level 2 (middle) — Galleries -->
+  <rect x="210" y="200" width="180" height="95" fill="#CCCAC5" stroke="#706E68" stroke-width="1.2"/>
+  <rect x="206" y="188" width="188" height="16" fill="#B1AFA9" stroke="#706E68" stroke-width="1"/>
+  <!-- Level 2 glazed front -->
+  <rect x="210" y="214" width="28" height="81" fill="#E8E7E3" stroke="#929088" stroke-width="0.8"/>
+  <line x1="210" y1="237" x2="238" y2="237" stroke="#929088" stroke-width="0.4"/>
+  <line x1="210" y1="260" x2="238" y2="260" stroke="#929088" stroke-width="0.4"/>
+  <rect x="238" y="200" width="152" height="95" fill="#C0BFBB"/>
+  <text x="250" y="253" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="8" letter-spacing="2" fill="#929088">GALLERY</text>
+
+  <!-- Level 1 (ground) — Studios & Entry -->
+  <rect x="360" y="230" width="200" height="90" fill="#CCCAC5" stroke="#706E68" stroke-width="1.2"/>
+  <rect x="356" y="218" width="208" height="16" fill="#B1AFA9" stroke="#706E68" stroke-width="1"/>
+  <!-- Level 1 glazed facade / entrance -->
+  <rect x="360" y="244" width="32" height="76" fill="#E8E7E3" stroke="#929088" stroke-width="0.8"/>
+  <line x1="360" y1="268" x2="392" y2="268" stroke="#929088" stroke-width="0.4"/>
+  <!-- Entry door -->
+  <rect x="448" y="286" width="26" height="34" fill="#D4D2CE" stroke="#929088" stroke-width="0.8"/>
+  <rect x="392" y="230" width="168" height="90" fill="#C0BFBB"/>
+  <text x="405" y="279" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="8" letter-spacing="2" fill="#929088">STUDIOS</text>
+
+  <!-- Retaining walls between levels -->
+  <rect x="238" y="160" width="12" height="120" fill="#929088"/>
+  <rect x="388" y="188" width="12" height="112" fill="#929088"/>
+
+  <!-- Stairs between levels -->
+  <!-- Stairs L3 to L2 -->
+  <line x1="238" y1="200" x2="216" y2="215" stroke="#929088" stroke-width="0.6"/>
+  <line x1="238" y1="215" x2="216" y2="230" stroke="#929088" stroke-width="0.6"/>
+  <line x1="238" y1="230" x2="216" y2="245" stroke="#929088" stroke-width="0.6"/>
+  <!-- Stairs L2 to L1 -->
+  <line x1="388" y1="230" x2="366" y2="244" stroke="#929088" stroke-width="0.6"/>
+  <line x1="388" y1="244" x2="366" y2="258" stroke="#929088" stroke-width="0.6"/>
+  <line x1="388" y1="258" x2="366" y2="272" stroke="#929088" stroke-width="0.6"/>
+
+  <!-- Elevation markers -->
+  <line x1="30" y1="148" x2="55" y2="148" stroke="#B1AFA9" stroke-width="0.6"/>
+  <text x="10" y="151" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="7" fill="#929088">+8.5</text>
+  <line x1="30" y1="188" x2="55" y2="188" stroke="#B1AFA9" stroke-width="0.6"/>
+  <text x="10" y="191" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="7" fill="#929088">+5.2</text>
+  <line x1="30" y1="218" x2="55" y2="218" stroke="#B1AFA9" stroke-width="0.6"/>
+  <text x="10" y="221" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="7" fill="#929088">+2.8</text>
+  <line x1="30" y1="260" x2="55" y2="260" stroke="#B1AFA9" stroke-width="0.6"/>
+  <text x="10" y="263" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="7" fill="#929088">±0.0</text>
+
+  <!-- Hatching for cut earth -->
+  <line x1="0" y1="262" x2="60" y2="262" stroke="#929088" stroke-width="0.5"/>
+  <line x1="0" y1="270" x2="60" y2="270" stroke="#929088" stroke-width="0.3"/>
+  <line x1="0" y1="278" x2="40" y2="278" stroke="#929088" stroke-width="0.3"/>
+
+  <!-- Label -->
+  <line x1="40" y1="418" x2="560" y2="418" stroke="#B1AFA9" stroke-width="0.5"/>
+  <text x="40" y="435" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="9" letter-spacing="3" fill="#929088">03 — KEREN CULTURAL CENTER</text>
+  <text x="420" y="435" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="9" letter-spacing="3" fill="#B1AFA9">LONGITUDINAL SECTION</text>
+</svg>
