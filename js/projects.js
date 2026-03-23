@@ -18,8 +18,8 @@
       title: 'Villa Seravezza',
       category: 'Residential',
       meta: 'Tuscany, Italy · 2023',
-      image: './assets/images/projects/project-01.svg',
-      imageAlt: 'Villa Seravezza — south elevation drawing',
+      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=85',
+      imageAlt: 'Villa Seravezza — modern hillside villa, Tuscany',
       description: 'A hillside villa integrating locally quarried Apuan travertine with precise board-formed concrete volumes, orienting every primary space toward the mountain panorama. The building is organised around two interlocking bars — a horizontal sleeping wing and a vertical living tower — that frame a covered outdoor terrace open to the valley. All structural materials were sourced within a 40 km radius of the site.',
       specs: {
         'Area':      '340 m²',
@@ -33,8 +33,8 @@
       title: 'The Linden House',
       category: 'Residential',
       meta: 'Tel Aviv, Israel · 2022',
-      image: './assets/images/projects/project-02.svg',
-      imageAlt: 'The Linden House — ground floor courtyard plan',
+      image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=85',
+      imageAlt: 'The Linden House — courtyard residence, Tel Aviv',
       description: 'An urban family residence in the heart of Tel Aviv structured around a central courtyard that draws daylight deep into the plan and moderates the Mediterranean climate through cross-ventilation. The rooms face inward rather than toward the street, creating a quiet domestic world within a dense urban fabric. The courtyard is planted with a single linden tree, which gives the house its name.',
       specs: {
         'Area':      '280 m²',
@@ -48,8 +48,8 @@
       title: 'Keren Cultural Center',
       category: 'Cultural',
       meta: 'Jerusalem, Israel · 2021',
-      image: './assets/images/projects/project-03.svg',
-      imageAlt: 'Keren Cultural Center — longitudinal section',
+      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=85',
+      imageAlt: 'Keren Cultural Center — civic building exterior, Jerusalem',
       description: 'A community arts hub carved into a hillside site on the boundary between the Jewish Quarter and the Armenian Quarter of Jerusalem\'s Old City. The program — two exhibition galleries, four workshop studios, and a 120-seat auditorium — is distributed across three terraced levels, each opening onto a different view of the city below. Exposed concrete throughout is deliberately rough, echoing the geological character of the limestone bedrock.',
       specs: {
         'Area':         '1,200 m²',
@@ -63,8 +63,8 @@
       title: 'Studio Mast',
       category: 'Commercial',
       meta: 'Berlin, Germany · 2021',
-      image: './assets/images/projects/project-04.svg',
-      imageAlt: 'Studio Mast — structural frame diagram',
+      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=85',
+      imageAlt: 'Studio Mast — industrial studio interior, Berlin',
       description: 'A former print workshop in Prenzlauer Berg converted into a multi-tenant creative studio building. The original cast-iron frame and brick envelope were preserved and celebrated throughout — stripped of later interventions and left deliberately raw. A new mezzanine level of lightweight blackened steel and structural glass was inserted within the double-height main hall, doubling usable floor area without touching the existing fabric.',
       specs: {
         'Area':      '620 m²',
@@ -78,8 +78,8 @@
       title: 'Apartment 14B',
       category: 'Interior',
       meta: 'New York, USA · 2020',
-      image: './assets/images/projects/project-05.svg',
-      imageAlt: 'Apartment 14B — floor plan at 1:100',
+      image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85',
+      imageAlt: 'Apartment 14B — minimal contemporary interior, New York',
       description: 'A pre-war apartment on the Upper West Side, stripped back to its original structure and reinvented with a commitment to material restraint. The original oak parquet floors were restored and extended throughout; structural columns were exposed and left unpainted; a new kitchen in pale concrete and blackened steel anchors the open living plan. The project was carried out entirely without demolition — working with the existing spatial logic rather than against it.',
       specs: {
         'Area':      '115 m²',
@@ -93,8 +93,8 @@
       title: 'The Garden Pavilion',
       category: 'Landscape',
       meta: 'Copenhagen, Denmark · 2019',
-      image: './assets/images/projects/project-06.svg',
-      imageAlt: 'The Garden Pavilion — east elevation with landscape',
+      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=85',
+      imageAlt: 'The Garden Pavilion — garden structure, Copenhagen',
       description: 'A contemplative garden structure on a private estate north of Copenhagen. The pavilion — in cast-in-situ concrete and weathering Corten steel — is designed to change in appearance over time: the concrete base will accumulate moss and lichen; the steel will deepen from orange to a dark, earthy brown. The single interior room is open on three sides, framing views of the garden as a series of living paintings across the seasons.',
       specs: {
         'Area':      '48 m²',
@@ -195,5 +195,14 @@
       setTimeout(function () { openLightbox(idx); }, 200);
     }
   }
+
+  /* ── Fade-in CDN images once loaded ────── */
+  document.querySelectorAll('img[src*="unsplash"]').forEach(function (img) {
+    if (img.complete) {
+      img.classList.add('loaded');
+    } else {
+      img.addEventListener('load', function () { img.classList.add('loaded'); });
+    }
+  });
 
 }());

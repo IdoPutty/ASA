@@ -35,10 +35,17 @@
   <header class="site-header" id="site-header">
     <nav class="nav-container">
       <a href="#hero" class="nav-logo" aria-label="ASA — Adi Shmueli Architect">
-        <svg class="logo-svg" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <text x="0" y="30" font-family="Cormorant, Georgia, serif" font-weight="300" font-size="28" letter-spacing="14" fill="currentColor">ASA</text>
-          <line x1="0" y1="36" x2="200" y2="36" stroke="currentColor" stroke-width="0.75" opacity="0.4"/>
-          <text x="1" y="46" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="7.5" letter-spacing="5" fill="currentColor" opacity="0.65">ARCHITECT</text>
+        <!--
+          Logo SVG — viewBox 240 × 52
+          "ASA" in Cormorant at font-size 30, letter-spacing 12
+          Rule line at y=38
+          "ARCHITECT" in Jost at font-size 8, letter-spacing 6
+          Both start at x=0; viewBox is generous to avoid clipping
+        -->
+        <svg class="logo-svg" viewBox="0 0 240 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <text x="0" y="31" font-family="Cormorant, Georgia, serif" font-weight="300" font-size="30" letter-spacing="12" fill="currentColor">ASA</text>
+          <line x1="0" y1="38" x2="240" y2="38" stroke="currentColor" stroke-width="0.75" opacity="0.3"/>
+          <text x="1" y="49" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="8" letter-spacing="6" fill="currentColor" opacity="0.6">ARCHITECT</text>
         </svg>
       </a>
 
@@ -106,10 +113,14 @@
 
           <div class="about-image-col">
             <div class="about-image-frame">
-              <!-- Replace about-portrait.svg with a real photo (about-portrait.jpg) when ready -->
               <img
-                src="./assets/images/about-portrait.svg"
-                alt="Adi Shmueli, Architect — portrait placeholder"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=960&q=85"
+                srcset="
+                  https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=480&q=80  480w,
+                  https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=960&q=85  960w
+                "
+                sizes="(max-width: 900px) 100vw, 45vw"
+                alt="Adi Shmueli, Architect"
                 class="about-portrait"
                 loading="lazy"
                 width="480"
@@ -171,8 +182,14 @@
           <!-- Project 01 -->
           <article class="project-card" data-index="0" tabindex="0" role="button" aria-label="View Villa Seravezza project details">
             <div class="project-card-image" aria-hidden="true">
-              <!-- Replace project-01.svg with project-01.jpg when photo is ready -->
-              <img src="./assets/images/projects/project-01.svg" alt="Villa Seravezza — elevation drawing, Tuscany 2023" loading="lazy" width="600" height="450">
+              <img
+                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85"
+                srcset="
+                  https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80   600w,
+                  https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85 1200w
+                "
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                alt="Villa Seravezza — modern hillside villa, Tuscany" loading="lazy" width="600" height="450">
               <div class="project-card-overlay">
                 <span class="overlay-title">Villa Seravezza</span>
                 <span class="overlay-category">Residential</span>
@@ -189,7 +206,14 @@
           <!-- Project 02 -->
           <article class="project-card" data-index="1" tabindex="0" role="button" aria-label="View The Linden House project details">
             <div class="project-card-image" aria-hidden="true">
-              <img src="./assets/images/projects/project-02.svg" alt="The Linden House — courtyard plan, Tel Aviv 2022" loading="lazy" width="600" height="450">
+              <img
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=85"
+                srcset="
+                  https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80   600w,
+                  https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=85 1200w
+                "
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                alt="The Linden House — courtyard residence, Tel Aviv" loading="lazy" width="600" height="450">
               <div class="project-card-overlay">
                 <span class="overlay-title">The Linden House</span>
                 <span class="overlay-category">Residential</span>
@@ -206,7 +230,14 @@
           <!-- Project 03 -->
           <article class="project-card" data-index="2" tabindex="0" role="button" aria-label="View Keren Cultural Center project details">
             <div class="project-card-image" aria-hidden="true">
-              <img src="./assets/images/projects/project-03.svg" alt="Keren Cultural Center — section drawing, Jerusalem 2021" loading="lazy" width="600" height="450">
+              <img
+                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=85"
+                srcset="
+                  https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=80   600w,
+                  https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=85 1200w
+                "
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                alt="Keren Cultural Center — civic building exterior, Jerusalem" loading="lazy" width="600" height="450">
               <div class="project-card-overlay">
                 <span class="overlay-title">Keren Cultural Center</span>
                 <span class="overlay-category">Cultural</span>
@@ -223,7 +254,14 @@
           <!-- Project 04 -->
           <article class="project-card" data-index="3" tabindex="0" role="button" aria-label="View Studio Mast project details">
             <div class="project-card-image" aria-hidden="true">
-              <img src="./assets/images/projects/project-04.svg" alt="Studio Mast — structural diagram, Berlin 2021" loading="lazy" width="600" height="450">
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85"
+                srcset="
+                  https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80   600w,
+                  https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85 1200w
+                "
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                alt="Studio Mast — industrial studio interior, Berlin" loading="lazy" width="600" height="450">
               <div class="project-card-overlay">
                 <span class="overlay-title">Studio Mast</span>
                 <span class="overlay-category">Commercial</span>
@@ -240,7 +278,14 @@
           <!-- Project 05 -->
           <article class="project-card" data-index="4" tabindex="0" role="button" aria-label="View Apartment 14B project details">
             <div class="project-card-image" aria-hidden="true">
-              <img src="./assets/images/projects/project-05.svg" alt="Apartment 14B — floor plan, New York 2020" loading="lazy" width="600" height="450">
+              <img
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85"
+                srcset="
+                  https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80   600w,
+                  https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85 1200w
+                "
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                alt="Apartment 14B — minimal contemporary interior, New York" loading="lazy" width="600" height="450">
               <div class="project-card-overlay">
                 <span class="overlay-title">Apartment 14B</span>
                 <span class="overlay-category">Interior</span>
@@ -257,7 +302,14 @@
           <!-- Project 06 -->
           <article class="project-card" data-index="5" tabindex="0" role="button" aria-label="View The Garden Pavilion project details">
             <div class="project-card-image" aria-hidden="true">
-              <img src="./assets/images/projects/project-06.svg" alt="The Garden Pavilion — east elevation, Copenhagen 2019" loading="lazy" width="600" height="450">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85"
+                srcset="
+                  https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80   600w,
+                  https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85 1200w
+                "
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                alt="The Garden Pavilion — garden structure, Copenhagen" loading="lazy" width="600" height="450">
               <div class="project-card-overlay">
                 <span class="overlay-title">The Garden Pavilion</span>
                 <span class="overlay-category">Landscape</span>
@@ -355,10 +407,10 @@
         <div class="footer-rule" aria-hidden="true"></div>
         <div class="container footer-inner">
           <a href="#hero" class="footer-logo-link" aria-label="Back to top — ASA">
-            <svg class="logo-svg logo-svg--white" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <text x="0" y="30" font-family="Cormorant, Georgia, serif" font-weight="300" font-size="28" letter-spacing="14" fill="white">ASA</text>
-              <line x1="0" y1="36" x2="200" y2="36" stroke="white" stroke-width="0.75" opacity="0.25"/>
-              <text x="1" y="46" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="7.5" letter-spacing="5" fill="white" opacity="0.4">ARCHITECT</text>
+            <svg class="logo-svg logo-svg--white" viewBox="0 0 240 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <text x="0" y="31" font-family="Cormorant, Georgia, serif" font-weight="300" font-size="30" letter-spacing="12" fill="white">ASA</text>
+              <line x1="0" y1="38" x2="240" y2="38" stroke="white" stroke-width="0.75" opacity="0.2"/>
+              <text x="1" y="49" font-family="Jost, system-ui, sans-serif" font-weight="200" font-size="8" letter-spacing="6" fill="white" opacity="0.4">ARCHITECT</text>
             </svg>
           </a>
           <p class="footer-copy">&copy; 2024 Adi Shmueli Architect &nbsp;&middot;&nbsp; All rights reserved</p>

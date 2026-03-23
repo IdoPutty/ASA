@@ -19,23 +19,17 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background:
+  /* Gradient overlay on top of the Unsplash hero photo */
+  background-image:
     linear-gradient(
       170deg,
-      rgba(20, 19, 18, 0.15) 0%,
-      rgba(20, 19, 18, 0.6) 100%
+      rgba(20, 19, 18, 0.35) 0%,
+      rgba(20, 19, 18, 0.72) 100%
     ),
-    linear-gradient(
-      135deg,
-      var(--gray-900) 0%,
-      var(--gray-800) 30%,
-      var(--gray-700) 60%,
-      var(--gray-900) 100%
-    );
-  /* To use a real photo, replace with:
-     background-image: linear-gradient(…overlay…), url('../assets/images/hero-bg.jpg');
-     background-size: cover;
-     background-position: center; */
+    url('https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1920&q=85');
+  background-size: cover;
+  background-position: center 40%;
+  background-color: var(--gray-900); /* fallback while image loads */
 }
 
 /* Thin entablature line at very top */
@@ -204,6 +198,12 @@
   padding-block: var(--space-6);
   border-top: 1px solid var(--gray-300);
   border-bottom: 1px solid var(--gray-300);
+}
+
+.about-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .about-stat-number {

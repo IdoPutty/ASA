@@ -55,6 +55,7 @@ body {
 .nav-logo {
   display: flex;
   align-items: center;
+  flex-shrink: 0;               /* never compress the logo */
   transition: opacity var(--transition-base);
 }
 
@@ -63,16 +64,29 @@ body {
 }
 
 .logo-svg {
-  width: 120px;
+  width: 110px;
   height: auto;
   color: currentColor;
+  overflow: visible;            /* prevent SVG clipping */
 }
 
 /* Desktop nav links */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: var(--space-8);
+  gap: var(--space-8);          /* 4rem on wide screens */
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: var(--space-6);        /* 3rem on tablet landscape */
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    gap: var(--space-4);        /* 2rem on smaller laptop / large tablet */
+  }
 }
 
 .nav-link {
@@ -83,6 +97,7 @@ body {
   text-transform: uppercase;
   color: currentColor;
   opacity: 0.8;
+  white-space: nowrap;          /* prevent wrapping / overlap */
   transition: opacity var(--transition-base);
   position: relative;
 }
@@ -309,7 +324,16 @@ body {
   height: 100%;
   object-fit: cover;
   filter: grayscale(15%);
-  transition: filter var(--transition-slow), transform var(--transition-slow);
+  transition: filter var(--transition-slow), transform var(--transition-slow), opacity 0.4s ease;
+}
+
+/* Fade in from transparent while CDN image loads */
+.project-card-image img:not([complete]) {
+  opacity: 0;
+}
+.project-card-image img[complete],
+.project-card-image img.loaded {
+  opacity: 1;
 }
 
 /* Placeholder when image is missing */
